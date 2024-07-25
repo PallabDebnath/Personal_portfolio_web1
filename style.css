@@ -1,0 +1,233 @@
+body {
+  background-color: rgb(0, 0,35);
+  color:aliceblue;
+  font-family:'poppins' ,sans-serif;
+ }
+ *{
+  margin: 0;
+  padding: auto;
+ }
+ nav{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #5ef7e524;
+  height: 92px;
+ }
+ nav ul {
+  display: flex;
+  justify-content: center;
+ }
+ nav ul li {
+  justify-content: center;
+   gap: 3.2em;
+  list-style: none;
+  margin: 0 25px;
+ }
+ nav ul li a {
+  text-decoration: none;
+  color: aliceblue;
+ }
+ nav ul li a:hover{
+  color:rgb(97, 188, 208);
+ }
+ .left{
+  font-size: 1.5rem;
+ }
+ p{
+  font-size:11px;
+ }
+ 
+.left h1 {
+  display: inline-block;
+  position: relative;
+  color: #e0f3fc;
+}
+
+.left h1:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color:whitesmoke;
+  transform-origin: bottom right;
+  transition: transform 0.75s ease-out;
+}
+
+.left h1:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+.icones .fa-brands{
+  color: antiquewhite;
+  font-size: 40px;
+}
+ .leftSection {
+  font-size: 1.2rem;
+  width: 58%;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 15px;
+  padding: 10px;
+}
+.leftSection .container .btn{
+  font-size: .8rem;
+}
+.rightSection {
+background: cyan;
+}
+.icons{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.content{
+  margin-left: 30px;
+
+}
+.content h1{
+  font-size: 3rem;
+}
+.content h2{
+  font-size: 1.7rem;
+}
+.content h2 span{
+  color: rgb(231, 200, 161);
+  font-size: 1.8rem;
+}
+.content p{
+  font-size: 1.1rem;
+  max-width: 50rem;
+  margin: 1.1rem 0 3rem 0;
+
+}.container{
+  display: flex;
+  align-items: center;
+}
+
+.button {
+	margin: 0;
+	height: auto;
+	background: transparent;
+	padding: 0;
+	border: none;
+	cursor: pointer;
+	margin-left: 40px;
+  }
+
+  .button {
+	--border-right: 5px;
+	--text-stroke-color: rgba(233, 217, 217, 0.85);
+	--animation-color: #5ef7e5;
+	--fs-size: 1em;
+	letter-spacing: 3px;
+	text-decoration: none;
+	font-size: var(--fs-size);
+	font-family: "Arial";
+	position: relative;
+	text-transform: uppercase;
+	color: transparent;
+	-webkit-text-stroke: 2px var(--text-stroke-color);
+  }
+
+  .hover-text {
+	position: absolute;
+	box-sizing: border-box;
+	content: attr(data-text);
+	color: var(--animation-color);
+	width: 0%;
+	inset: 0;
+	border-right: var(--border-right) solid var(--animation-color);
+	overflow: hidden;
+	transition: 0.7s;
+	-webkit-text-stroke: 2px var(--animation-color);
+  }
+  
+  .button:hover .hover-text {
+	width: 100%;
+	filter: drop-shadow(0 0 23px var(--animation-color))
+  }
+  .btn {
+    position: relative;
+    width: 200px;
+    height: 40px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    border: 1px solid #259299;
+    background-color: #1b826f;
+    overflow: hidden;
+    border-radius: 2px;
+    margin-left: 30px;
+  }
+  
+  .btn, .button__icon, .button__text {
+    transition: all 0.5s;
+  }
+  
+  .btn .button__text {
+    transform: translateX(22px);
+    color: #fff;
+    font-weight: 600;
+  }
+  
+  .btn .button__icon {
+    position: absolute;
+    transform: translateX(140px);
+    height: 100%;
+    width: 54px;
+    background-color: #17795E;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .btn .svg {
+    width: 20px;
+    fill: #fff;
+  }
+  
+  .btn:hover {
+    background: #17795E;
+  }
+  
+  .btn:hover .button__text {
+    color: transparent;
+  }
+  
+  .btn:hover .button__icon {
+    width: 200px;
+    transform: translateX(0);
+  }
+  
+  .btn:active .button__icon {
+    background-color: #146c54;
+  }
+  
+  .btn:active {
+    border: 1px solid #146c54;
+  }
+.icons .fa-brands:hover{
+	cursor: pointer;
+	background: linear-gradient(#66c4ffb8, rgb(119, 37, 251));
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.secondSection{
+  margin: auto;
+  max-width: 80vw;
+}
+main hr{
+  height: 1.8px solid;
+  color: rgb(167, 241, 241);
+  margin: 40px  48px;
+}
+
